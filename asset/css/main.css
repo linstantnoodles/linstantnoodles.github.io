@@ -35,7 +35,7 @@ header h1 {
 
 header #logo {
     float: left;
-    background-image: url(http://www.cy8cy.com/wp-content/uploads/2010/12/Lim1.png);
+    background-image: url(../img/logo.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 5px;
