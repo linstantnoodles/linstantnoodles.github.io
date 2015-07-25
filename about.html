@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="http://f.fontdeck.com/s/css/p+zwVqq4agQiKsiAkUNVfzsNquo/webtypography.net/1575.css" type="text/css">
-        <link rel="stylesheet" type="text/css" href="main.css"></link>
+        <link rel="stylesheet" type="text/css" href="asset/css/main.css"></link>
         <style type="text/css">
             #left-container blockquote {
                 margin: 0px 0px 35px 0px;
@@ -12,21 +12,26 @@
             #left-container blockquote p {
                 font-family: 'premiera italic', georgia, serif;
                 font-style: italic;
-                opacity: 0.8;
             }
 
-            #bio span {
+            #pic {
                 display: block;
                 float: left;
-                background-image: url(http://i560.photobucket.com/albums/ss46/twilightlover88_DaleJr/Dale%20Earnhardt%20Jr/Pokemon/typhlosion.gif);
-                background-size: 60%;
+                background-image: url(asset/img/prof-pic.jpg);
                 background-repeat: no-repeat;
-                background-position: 15px 5px;
+                background-size: 100%;
                 border-radius: 50%;
                 width: 80px;
                 height: 80px; 
-                border: solid 1px #000;
                 margin-right: 10px;
+            }
+
+            .lg-capital-letter {
+                font-size: 2em;
+            }
+
+            .left-quote, .right-quote {
+                font-size: 1.5em;
             }
 
             #social {
@@ -42,6 +47,10 @@
                margin: 0px;
                padding: 0px;
             }
+
+            #social li {
+                margin-bottom: 5px;
+            }
         </style>
     </head>
     <body>
@@ -56,42 +65,47 @@
                     <div class="spacer"></div>
                     <ul>
                         <li>
-                            <a href="about.html">about</a>
+                            <a href="about.html" class="active">About</a>
                         </li>
                         <li>
-                            <a href="projects.html">projects </a>
+                            <a href="projects.html">Projects </a>
                         </li>
                         <li>
-                            <a href="tutorials.html">tutorials</a>
+                            <a href="tutorials.html">Tutorials</a>
                         </li>
                     </ul>
                 </nav>
                 <main>
                     <div class="spacer"></div>
                     <div id="content">
-                        <blockquote>
+                        <!--<blockquote>
                             <p>&ldquo; No problem can withstand the assault of sustained thinking.&rdquo; - Voltaire</p>
+                            </blockquote>-->
+                        <blockquote id="main-quote">
+                            <p><span class="left-quote">&ldquo;</span> <span class="quote-content">Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.</span><span class="right-quote">&rdquo;</span> - Einstein</p>
                         </blockquote>
                         <section id="bio">
                             <div>
-                                <span></span>
-                                <p>rem ipsum dolor sit amet, consectetur adipiscing elit. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. At cum de plurimis eadem dicit, tum certe de maximis. Non potes, nisi retexueris illa. Duo Reges: constructio interrete. Deinde disputat, quod cuiusque generis animantium statui deceat extremum. Teneo, inquit, finem illi videri nihil dolere. </p>
+                                <span id="pic"></span>
+                                <p><span class="lg-capital-letter">H</span>ey! I'm a Boston College graduate currently working as a Software Engineer at 2U. I build web applications mainly using JavaScript and Python, but I can scale quickly to any language or framework as needed. I'm fascinated with technology and I think machines are one of our most valuable teammates in our problem solving endeavors. However, they're extremely compliant and take things too literally so I always do my best not lead them astray with sloppy thinking.</p>
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut turpis ac tortor commodo viverra a vitae nulla. Mauris at ultrices dolor. Nullam ex magna, lobortis semper vehicula ac, malesuada ac leo. Nam sollicitudin tempor dui, ut imperdiet sapien dapibus at. Nulla tincidunt erat vel eros ullamcorper, nec ullamcorper massa commodo. Ut faucibus eu odio eu tristique. Integer vel dignissim tortor. Donec felis magna, pharetra et rutrum non, fermentum id libero.</p>
+                                I'm a huge fan of Science Fiction films and I think everyone should see The Matrix (1999) and Interstellar (2014). Interstellar actually inspired me to complete a <a href="https://www.coursera.org/learn/how-things-work">online physics course</a> so that I could understand the films physics references. Anime is also awesome and if you want about twenty hours of thought-provoking thrill and adventure you should check out Death Note. When I'm not in front of my computer, I take pleasure in torturing myself through a combination of CrossFit and Urban Calisthentics aka "bodyweight exercises at a local public park because gyms are too damn expensive".
+                                </p>
+                                <p>
+                                I love meeting people and learning new things. I find that those two activities tend to go hand in hand so if you want to hit me up just shoot me an email at <a href="mailto:catwind7@gmail.com">catwind7 [at] gmail.com</a>. Bye!
+                                </p>
+                                
 
                                 </div>
                             </section>
                             <section id="social">
-                                <p>(Contact | Stalk) me: </p>
+                                <p>You can find me on: </p>
                                 <ul>
                                     <li>
-                                        <span class="icon gmail-icon"></span> catwind7 [at] gmail.com
+                                        <span class="icon stackexchange-icon"></span> <a href="http://stackexchange.com/users/3516177/linstantnoodles?tab=accounts" target="_blank">Stack Exchange </a>
                                     </li>
                                     <li>
-                                        <span class="icon stackexchange-icon"></span> <a href="http://stackexchange.com/users/3516177/linstantnoodles?tab=accounts">stack exchange </a>
-                                    </li>
-                                    <li>
-                                        <span class="icon linkedin-icon"></span><a href="">linkedin</a>
+                                        <span class="icon linkedin-icon"></span><a href="https://www.linkedin.com/in/tempora7" target="_blank">LinkedIn</a>
                                     </li>
                                 </ul>
 
@@ -100,7 +114,23 @@
                     </main>
             </div>
             <div id="right-container">
+                <img alt="Ouroboros" title="Ouroboros" src="asset/img/snake.svg">
             </div>
         </div>
+        <script type="text/javascript">
+            /*var emailEl = document.getElementById("email-address");
+
+            if (emailEl) {
+                emailEl.innerHTML = encrypt(emailEl.innerHTML);
+            }
+
+            function encrypt(value) {
+                if (value && typeof value === "string") {
+                    return value.split("").map(function (x) {
+                        return x.charCodeAt() - 5;
+                    }).join(".");
+                }
+            }*/
+        </script>
     </body>
 </html>
